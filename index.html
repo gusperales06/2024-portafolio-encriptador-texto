@@ -17,7 +17,7 @@
     <main>
       <section>
         <div>
-          <input type="text" name="texto" value="" placeholder="Ingrese texto aquí"> 
+          <input class="caja__texto__entrada" id="texto-entrada" type="text" name="texto" placeholder="Ingrese texto aquí"> 
         </div>
 
         <div>
@@ -27,13 +27,13 @@
           </div>
 
           <div>
-            <button type="button">Encriptar</button>
-            <button type="button">Desencriptar</button>
+            <button onclick="encriptarTexto();" type="button">Encriptar</button>
+            <button onclick="desencriptarTexto();" type="button">Desencriptar</button>
           </div>
         </div>
       </section>
 
-      <section>
+      <section id="imagen-persona">
         <div>
           <img src="assets/Muñeco.png" alt="Personaje de Alura con lupa">
         </div>
@@ -44,9 +44,9 @@
         </div>
       </section>
 
-      <section hidden>
-        <textarea rows="1" cols="1" disabled></textarea>
-        <button type="button">Copiar</button>
+      <section id="caja-texto-salida" hidden>
+        <textarea class="caja__texto__salida" id="texto-salida" rows="30" cols="15" disabled></textarea>
+        <button id="boton-copiar" onclick="copiarAPortapapeles();" type="button">Copiar</button>
       </section>
     </main>
 
