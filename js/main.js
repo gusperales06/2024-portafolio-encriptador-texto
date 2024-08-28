@@ -26,6 +26,7 @@ function desencriptarTexto() {
   textoDesencriptado = atob(textoDesencriptado);
 
   document.getElementById("texto-salida").value = textoDesencriptado;
+  ocultarSalida('caja-texto-salida', 'imagen-persona');
   limpiarCaja("texto-entrada");
 }
 
