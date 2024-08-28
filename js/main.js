@@ -1,9 +1,8 @@
 
-const textoEntrada = document.getElementById("texto-entrada").value;
 const botonCopiar = document.getElementById('boton-copiar');
-const textoSalida = document.getElementById("texto-salida");
 
 function encriptarTexto() {
+  const textoEntrada = document.getElementById("texto-entrada").value;
   let textoEncriptado = btoa(textoEntrada);
 
   textoEncriptado = textoEncriptado.replace(/=/g, '')
@@ -16,6 +15,7 @@ function encriptarTexto() {
 }
 
 function desencriptarTexto() {
+  const textoEntrada = document.getElementById("texto-entrada").value;
   let textoDesencriptado = textoEntrada.replace(/-/g, '+')
   .replace(/_/g, '/');
 
@@ -30,6 +30,7 @@ function desencriptarTexto() {
 }
 
 botonCopiar.addEventListener("click", () => {
+  const textoSalida = document.getElementById("texto-salida");
   navigator.clipboard.writeText(textoSalida.value);
   alert("Texto copiado al portapapeles");
   limpiarCaja("texto-salida");
