@@ -10,43 +10,45 @@
   </head>
 
   <body>
-    <header>
+    <header class="encabezado">
       <img class="encabezado__logo" src="assets/Logo.png" alt="Logo de Alura">
     </header> 
 
-    <main>
+    <main class="presentacion">
       <section>
         <div>
-          <input class="caja__texto__entrada" id="texto-entrada" type="text" name="texto" placeholder="Ingrese texto aquí"> 
+          <textarea class="caja__texto" id="texto-entrada" placeholder="Ingrese el texto aqui" rows="25" cols="50" ></textarea>
         </div>
 
         <div>
-          <div>
-            <span><img src="assets/Vector.png" alt="Vector con signo de exclamacion"></span>
-            <p>Solo letras minúsculas y sin acentos</p>
+          <div class="bandera">
+            <span class="bandera__mensaje bandera__mensaje__texto">
+              <img src="assets/Vector.png" alt="Vector con signo de exclamacion">
+              Solo letras minúsculas y sin acentos
+            </span>
           </div>
 
-          <div>
-            <button onclick="encriptarTexto();" type="button">Encriptar</button>
-            <button onclick="desencriptarTexto();" type="button">Desencriptar</button>
+          <div class="botones__accion">
+            <button class="botones__accion__texto boton__encriptar" onclick="encriptarTexto();" type="button">Encriptar</button>
+            <button class="botones__accion__texto boton__desencriptar" onclick="desencriptarTexto();" type="button">Desencriptar</button>
           </div>
         </div>
       </section>
 
-      <section id="imagen-persona">
+      <section class="caja__imagen" id="imagen-persona">
         <div>
           <img src="assets/Muñeco.png" alt="Personaje de Alura con lupa">
         </div>
 
         <div>
-          <h2>Ningún mensaje fue encontrado</h2>
-          <p>Ingrese el texto que deseas encriptar o desencriptar</p>
+          <h2 class="imagen__titulo">Ningún mensaje fue encontrado</h2>
+          <p class="imagen__texto">Ingrese el texto que deseas encriptar o desencriptar</p>
         </div>
       </section>
 
-      <section id="caja-texto-salida" hidden>
-        <textarea class="caja__texto__salida" id="texto-salida" rows="30" cols="15" disabled></textarea>
-        <button id="boton-copiar" onclick="copiarAPortapapeles();" type="button">Copiar</button>
+      <section class="caja__imagen" id="caja-texto-salida" hidden>
+        <textarea class="caja__texto" id="texto-salida" rows="25" cols="50" disabled></textarea>
+        <button class="botones__accion__texto boton__desencriptar" id="boton-copiar" onclick="copiarAPortapapeles();" type="button">Copiar</button>
       </section>
     </main>
 

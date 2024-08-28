@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --color-primario: #F7ECDE;
+  --color-secundario: #E9DAC1;
+  --color-terciario: #9ED2C6;
+  --color-cuartario: #54BAB9;
+
+  --fuente-inter: 'Inter', sans-serif;
+  --fuente-inter-regular: 440;
+  --fuente-inter-bold: 700;
+}
+
+body {
+  background-color: var(--color-primario);
+  color: var(--color-terciario);
+  box-sizing: border-box;
+}
+
+.encabezado {
+  margin: 4.5% 0 0 4.5%;
+}
+
+.presentacion {
+  display: flex;
+  align-items: center;
+  padding: 10% 15%;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.caja__texto {
+  font-family:var(--fuente-inter);
+  font-weight: var(--fuente-inter-regular);
+  color: var(--color-cuartario);
+  border: none;
+  background-color: transparent;
+  overflow: auto; 
+  resize: none;
+}
+
+.bandera {
+  display: flex;
+  margin: 10px 0;
+}
+
+.bandera__mensaje {
+  flex-direction: row;
+  gap: 8px;
+}
+
+.bandera__mensaje__texto {
+  font-family: var(--fuente-inter);
+  font-weight: var(--fuente-inter-regular);
+  color: var(--color-terciario);
+}
+
+.botones__accion {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.botones__accion__texto {
+  font-family: var(--fuente-inter);
+  font-weight:var(--fuente-inter-regular);
+  height: 67px;
+  width: 328px;
+  border: none;
+  border-radius: 24px;
+  text-align: center;
+  padding: 24px 48px;
+}
+
+.boton__encriptar {
+  background-color: var(--color-cuartario);
+  color: var(--color-secundario);
+}
+
+.boton__desencriptar {
+  background-color: transparent;
+  color: var(--color-cuartario);
+  border: 2px solid var(--color-cuartario);
+}
+
+.boton__desencriptar:hover {
+  background-color: var(--color-terciario);
+}
+
+.caja__imagen {
+  background-color: var(--color-secundario);
+  border-radius: 32px;
+  padding: 15% 8%;
+}
+
+.imagen__titulo {
+  font-family: var(--fuente-inter);
+  font-weight: var(--fuente-inter-bold);
+  color: var(--color-cuartario);
+}
+
+.imagen__texto {
+  font-family: var(--fuente-inter);
+  font-weight: var(--fuente-inter-regular);
+  color: var(--color-terciario);
+}
+
